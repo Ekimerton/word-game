@@ -27,3 +27,5 @@ pithy [concise, succinct, terse, brief, compact, to the point] {(brief, forceful
 plucky [brave, bold, courageous, valiant, intrepid, fearless] {(having or showing determined courage in the face of difficulties).}
 keen [eager, enthusiastic, fervent, intense, sharp, acute] {(having or showing eagerness or enthusiasm towards something; also refers to something sharp or penetrating, in terms of physical objects or intellectual perceptions).}
 spry [active, lively, energetic, brisk, animated, agile] {(especially of an older person) active; lively and energetic.}
+cook [chef, prepare, falsify, make, bake, manipulate, put together]
+decadent [dissolute, hedonistic, indulgent, unrestrained, degenerate, licentious, epicurean]

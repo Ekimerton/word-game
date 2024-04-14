@@ -3,11 +3,16 @@ import path from "path";
 import { getSynonyms } from "./api/datamuse";
 import { getWordDefinition } from "./api/definition";
 
-export async function getRandomWordFromFile() {
+export async function getRandomWordFromFile(dayNumber) {
   const filePath = path.join(process.cwd(), "./public/filteredWords.txt");
   const data = fs.readFileSync(filePath, "utf8");
   const words = data.split("\n");
-  const randomIndex = Math.floor(Math.random() * words.length);
+
+  if (dayNumber === "-1") {
+    const randomIndex = Math.floor(Math.random() * words.length);
+    return words[randomIndex].trim();
+  }
+  const randomIndex = dayNumber % words.length;
   return words[randomIndex].trim();
 }
 
@@ -51,7 +56,7 @@ export async function getDailyWord(dayNumber) {
       definition: definition || "No definition found",
     };
   } else {
-    const word = await getRandomWordFromFile();
+    const word = await getRandomWordFromFile(dayNumber);
     const synonyms = await getSynonyms(word);
     const definition = await getWordDefinition(word);
     return {

@@ -29,3 +29,6 @@ keen [eager, enthusiastic, fervent, intense, sharp, acute] {(having or showing e
 spry [active, lively, energetic, brisk, animated, agile] {(especially of an older person) active; lively and energetic.}
 cook [chef, prepare, falsify, make, bake, manipulate, put together]
 decadent [dissolute, hedonistic, indulgent, unrestrained, degenerate, licentious, epicurean]
+abrogate
+abrupt
+assort

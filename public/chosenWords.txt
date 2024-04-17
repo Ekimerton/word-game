@@ -32,3 +32,6 @@ decadent [dissolute, hedonistic, indulgent, unrestrained, degenerate, licentious
 abrogate
 abrupt
 assort
+abscond
+front
+expected

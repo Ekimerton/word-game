@@ -35,7 +35,9 @@ export default async function Page() {
           </Button>
           {Array.from({ length: number }, (_, i) => (
             <Button variant="link" key={i} className="max-w-1/4" asChild>
-              <Link href={`/archive/${i + 1}`}>{`Relatle ${i + 1}`}</Link>
+              <Link prefetch={false} href={`/archive/${i + 1}`}>{`Relatle ${
+                i + 1
+              }`}</Link>
             </Button>
           ))}
         </div>

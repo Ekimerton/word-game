@@ -3,6 +3,8 @@ import path from "path";
 import { getSynonyms } from "./api/datamuse";
 import { getWordDefinition } from "./api/definition";
 
+const seedrandom = require("seedrandom");
+
 export async function getRandomWordFromFile(dayNumber) {
   const filePath = path.join(process.cwd(), "./public/filteredWords.txt");
   const data = fs.readFileSync(filePath, "utf8");
@@ -12,7 +14,10 @@ export async function getRandomWordFromFile(dayNumber) {
     const randomIndex = Math.floor(Math.random() * words.length);
     return words[randomIndex].trim();
   }
-  const randomIndex = dayNumber % words.length;
+
+  const rng = seedrandom(`${dayNumber}`);
+  const randomIndex = Math.floor(rng() * words.length);
+
   return words[randomIndex].trim();
 }
 
